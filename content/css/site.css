@@ -224,26 +224,64 @@ body {
   font-size: 20px;
   color:white;
 }
-.productBox {
-  background-color:transparent;
-  padding:10px;
-  margin-bottom:10px;
-  padding-right:5px;
-  padding-left:5px;
-  -webkit-box-shadow: 0 8px 6px -6px  #999;
-     -moz-box-shadow: 0 8px 6px -6px  #999;
-          box-shadow: 0 8px 6px -6px #999;
-  padding-top: 100px;
-  color:#c9302c;
+
+.thumbnail {
+ border: 0px;
+ position: relative;
+ padding: 50px;
+   border-radius: 0;
+   margin-bottom:50px;
 }
 
-.productTitle {
-    font-weight:bold;
-  padding:5px 0 5px 0;
+.bookPrice {
+ background-color: #39D1B4 ;
+ color: #fff;
+ font-size: 18px;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   font-weight: 200;
+   height: 80px;
+   line-height: 80px;
+   text-align: center;
+   width: 80px;
+ position: absolute;
+ top: 12px;
+ right: 20px;
 }
 
-.productInfo {
-  padding-top:5%;
-  padding-bottom:5%;
-  min-height: 110px;
+/* Rating */
+
+.rating {
+ text-align: right;
+ -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+ margin: -10px 0 -30px 20px;
 }
+
+.likes,
+.dislikes {
+   background: #F65A5B ;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 0px 0 20px;
+  text-align: center;
+  font-weight: 200;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 500ms;
+}
+
+.likes:hover,
+.dislikes:hover {
+ color: #F65A5B ;
+   background: rgba(246, 90, 91, 0.25);
+   transition: background 500ms;
+}
+
+/* !Rating */

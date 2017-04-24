@@ -1,17 +1,26 @@
 <div class="thumbnail">
-        <img ng-src="{{ info.image }}" class="img-responsive img-rounded" />
+        <img ng-src="{{ info.cover }}" class="img-responsive img-rounded" />
+        <div class="bookPrice">
+            {{ info.price | currency }}
+        </div>
     <div class="productInfo">
         <div class="productTitle">
 			{{ info.title }}
-			{{ info.author }}
-			{{ info.price }}
-			{{ info.year }}
         </div>
         </br>
-        <div class="pull-right">
-            <a ng-href="#" class="btn btn-danger btn-sm" role="button">
-                Özellikleri
-            </a>
+        <div class="productAuthor">
+            {{ info.author | uppercase }} - {{ info.year }}
+        </div>
+        </br>
+        <div>
+            <div class="rating"> 
+                <p class="likes" ng-click="plusOne($index)">
+                    + {{ info.likes }}
+                </p>
+                <p class="dislikes" ng-click="minusOne($index)">
+                    - {{ info.dislikes }}
+                </p> 
+              </div>
         </div>
     </div>
 </div>
