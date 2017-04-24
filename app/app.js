@@ -11,4 +11,6 @@ app.config(function ($routeProvider) {
 		templateUrl: "app/views/books.html"
 	});
 
+	$routeProvider.otherwise({ redirectTo: "/home"});
+
 });
