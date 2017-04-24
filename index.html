@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="favicon.ico" rel="shortcut icon" />
+    <title>SPA with AngularJS</title>
+    <!-- CSS Contents -->
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link href="content/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix" data-ng-controller="navigationController">
+                    <div class="inner">
+                        <h3 class="masthead-brand">SPA</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li data-ng-class="{'active':isActive('/home')}"><a href="#/home">Home</a></li>
+                                <li data-ng-class="{'active':isActive('/products')}"><a href="#/products">Products</a></li>
+                                <li data-ng-class="{'active':isActive('/about')}"><a href="#/about">About</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <div data-ng-view=""></div>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>SPA</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>        
+
+    <!-- jQuery -->
+    <script src="scripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- 3rd party libraries -->
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/angular-route.min.js"></script>
+<script src="scripts/angular-resource.min.js"></script>
+<script src="scripts/angular-animate.min.js"></script>
+<script src="scripts/ui-bootstrap.min.js"></script>
+<script src="scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+<!-- Load app main script -->
+<script src="app/app.js"></script>
+
+<!-- Load controllers -->
+
+<!-- Load directives -->
